@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PRII DAY</title>
+    <title>PRII DAY</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="sidebar">
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-<a href="index.html" class="home">HOME</a>
+        <h2>PRII DAY</h2>
 
-<ul>
+        <nav>
 
-<li><a href="day10.html">● Day 10</a></li>
-<li><a href="day9.html">○ Day 9</a></li>
-<li><a href="day8.html">○ Day 8</a></li>
-<li><a href="day7.html">○ Day 7</a></li>
-<li><a href="day6.html">○ Day 6</a></li>
-<li><a href="day5.html">○ Day 5</a></li>
-<li><a href="day4.html">○ Day 4</a></li>
-<li><a href="day3.html">○ Day 3</a></li>
-<li><a href="day2.html">○ Day 2</a></li>
-<li><a href="day1.html">○ Day 1</a></li>
+            <a href="#" class="active">HOME</a>
 
-</ul>
+            <a href="#" id="day10">○ Day 10</a>
+            <a href="#" id="day9">○ Day 9</a>
+            <a href="#" id="day8">○ Day 8</a>
+            <a href="#" id="day7">○ Day 7</a>
+            <a href="#" id="day6">○ Day 6</a>
+            <a href="#" id="day5">○ Day 5</a>
+            <a href="#" id="day4">○ Day 4</a>
+            <a href="#" id="day3">○ Day 3</a>
+            <a href="#" id="day2">○ Day 2</a>
+            <a href="#" id="day1">○ Day 1</a>
 
-</nav>
+        </nav>
 
-<div class="container">
+    </aside>
 
-<h1>PRII DAY</h1>
+    <!-- Main Content -->
+    <main class="main">
 
-<div id="flipdown" class="flipdown"></div>
+        <h1>PRII DAY</h1>
 
-<p id="message"></p>
+        <!-- Countdown -->
+        <section id="countdown">
 
-</div>
+            <div class="time-card">
+                <div class="number" id="days">00</div>
+                <div class="label">Days</div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+            <div class="time-card">
+                <div class="number" id="hours">00</div>
+                <div class="label">Hours</div>
+            </div>
 
-<script src="script.js"></script>
+            <div class="time-card">
+                <div class="number" id="minutes">00</div>
+                <div class="label">Minutes</div>
+            </div>
+
+            <div class="time-card">
+                <div class="number" id="seconds">00</div>
+                <div class="label">Seconds</div>
+            </div>
+
+        </section>
+
+        <!-- Tulip decoration (we'll add SVG later) -->
+        <div id="flowers"></div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>
