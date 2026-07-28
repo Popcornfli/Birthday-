@@ -1,19 +1,52 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>For Pri</title>
-<link rel='stylesheet' href='style.css'></head><body>
-<h1>🎂 Countdown to Pri's Birthday</h1><div id='cd'></div>
-<script>
-const target=new Date('2026-08-08T00:00:00');
-setInterval(()=>{let d=target-new Date();if(d<0){cd.innerHTML='Happy Birthday!';return;}
-let days=Math.floor(d/86400000);cd.innerHTML=days+' days';},1000);
-</script>
-<ul>
-<li><a href='day1.html'>Day 1</a></li>
-<li><a href='day2.html'>Day 2</a></li>
-<li><a href='day3.html'>Day 3</a></li>
-<li><a href='day4.html'>Day 4</a></li>
-<li><a href='day5.html'>Day 5</a></li>
-<li><a href='day6.html'>Day 6</a></li>
-<li><a href='day7.html'>Day 7</a></li>
-<li><a href='day8.html'>Day 8</a></li>
-<li><a href='day9.html'>Day 9</a></li>
-<li><a href='day10.html'>Day 10</a></li></ul></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PRI DAY</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
+</head>
+
+<body>
+
+<nav class="sidebar">
+
+<h2>PRI DAY</h2>
+
+<a href="index.html" class="active">HOME</a>
+
+<a href="day10.html">○ Day 10</a>
+<a href="day9.html">○ Day 9</a>
+<a href="day8.html">○ Day 8</a>
+<a href="day7.html">○ Day 7</a>
+<a href="day6.html">○ Day 6</a>
+<a href="day5.html">○ Day 5</a>
+<a href="day4.html">○ Day 4</a>
+<a href="day3.html">○ Day 3</a>
+<a href="day2.html">○ Day 2</a>
+<a href="day1.html">○ Day 1</a>
+
+</nav>
+
+<div class="main">
+
+<h1>PRI DAY</h1>
+
+<div id="flipdown" class="flipdown"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
